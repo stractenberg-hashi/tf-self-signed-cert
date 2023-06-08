@@ -1,0 +1,13 @@
+private_key_algorithm = "RSA"
+rsa_bits              = "4096"
+private_key_filename  = "private_key.pem"
+
+certificate_filename       = "certificate.pem"
+dns_names                  = ["vault.demo.org", "vault1.demo.org", "vault2.demo.org", "vault3.demo.org", "vault4.demo.org", "vault5.demo.org"]
+common_name                = "vault.demo.org"
+organization               = "DEMO Org, Inc"
+organizational_unit        = "DevOps"
+country                    = "United States"
+province                   = "New Jersey"
+cert_validity_period_hours = 768
+allowed_uses               = ["key_encipherment", "digital_signature", "server_auth"]
