@@ -14,11 +14,6 @@ variable "private_key_filename" {
   default     = "private_key.pem"
 }
 
-
-
-
-
-
 variable "certificate_filename" {
   description = "Path and name of the certificate file to write out"
   type        = string
