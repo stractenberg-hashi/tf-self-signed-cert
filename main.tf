@@ -15,7 +15,6 @@ resource "local_file" "tls-private_key" {
 
 # generate self-signed cert
 resource "tls_self_signed_cert" "cert" {
-  #private_key_pem = file(var.private_key_filename)
   private_key_pem = tls_private_key.rsa-4096-key.private_key_pem
   dns_names       = var.dns_names
 
